@@ -1,0 +1,8 @@
+- Punto 1: En el capítulo uno parecen mezclarse protocolos de consenso de la familia BFT (con f < 1⁄3) y commit determinístico, con protocolos del estilo Nakamoto (e.g. Bitcoin) con f < 1⁄2 y commit probabilístico. Me parece una distinción importante, por lo que el capítulo debería ser revisado para que estos enfoques no se mezclen y no se hagan afirmaciones erróneas.
+- Respuesta 1: No estoy segura de cuáles eran las afirmaciones erróneas. Independientemente de eso, entiendo que no hice una clara diferencia entre esos tipos de protocolos en ningún momento. Agregué una sección "Evolución de las blockchains" en donde traté de comentar a grandes rasgos diferencias fundamentales que puede haber entre distintas tecnologías blockchains, y aclaré que en el estado del arte se mencionan enfoques para tecnologías con distintas características. También evité poner "bizantino" luego de cada ocurrencia de "algorimto de consenso", puesto que un algoritmo de consenso en principio podría no ser un BFT.
+
+- Punto 2: El capítulo 5 dice tratar de “Pruebas formales” pero las pruebas no son formales en absoluto. De hecho, ni siquiera el enunciado de las propiedades es formal y es dado en lenguaje natural. Por lo tanto considero que debería eliminarse cualquier alusión a formalidad.
+- Respuesta 2: Mala mía. Lo arreglé.
+
+- Punto 3: Encontré varios typos que podrían ser fácilmente encontrados y corregidos con un spell-checker.
+- Respuesta 3: Instalé un spell-checker y lo corrí con un diccionario en español. La primera sugerencia fue que reemplazara "blockchain" por "salchichón" o "salchichones". Pese a lo tentador de la sugerencia, no la seguí. Creo que corregí todos los errores de tipeo.
