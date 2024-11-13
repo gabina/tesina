@@ -24,7 +24,7 @@ A system component is correct if its response to inputs is consistent with its s
 - **Respuesta 2**: Esa sección fue modificada debido a otras sugerencias de cambio.
 
 - **Punto 3**: s1.3. "para guardar transacciones ... hasta el bloque génesis": siempre es necesario esto? Tengo entendido que no hace falta, puede obtenerse toda la blockchain cuando el nodo se arma, y luego podar algún prefijo. Por otro lado la oración es medio confusa, está hablando de memoria? "Nodo" debería ser "bloque"?
-- **Respuesta 3**: No tengo claro si siempre es necesario, tampoco me acordaba dónde había leido eso como para profundizar. Para no complicarla lo cambié a algo más concreto. Sobre todo porque tampoco sé si funcionará igual en todos los sistemas y era únicamente para dar un ejemplo.
+- **Respuesta 3**: No tengo claro si siempre es necesario, tampoco me acordaba dónde había leído eso como para profundizar. Para no complicarla lo cambié a algo más concreto. Sobre todo porque tampoco sé si funcionará igual en todos los sistemas y era únicamente para dar un ejemplo.
 Cambiado a: "Por otro lado, la escalabilidad vertical en la blockchain implica aumentar el poder de cómputo de los nodos existentes en la red, mediante la actualización de sus capacidades de hardware, como la mejora de GPUs o la ampliación de almacenamiento."
 
 - **Punto 4**: - s1.3 "Visa ... 2000 transacciones por segundo" este número me pareció muy bajo (da 170M por día, imagino que sólo en EEUU hay más
@@ -57,7 +57,7 @@ formación de particiones") también pareció salir de nada.
 - **Respuesta 11**: Lo mencioné en la sección “organización del trabajo”: Finalmente, el capítulo \ref{chapter:glossary} consta de un breve glosario con algunos conceptos utilizados en inglés a lo largo del trabajo, ya que no cuentan con traducciones adecuadas al español. Estos términos son escritos en su mayor parte \textit{en cursiva}, de modo que se sugiere dirigirse al glosario cuando un término escrito con dicho estilo tipográfico genere dudas.
 
 - **Punto 12**: p32 "más de un candidato": y a lo sumo dos, supongo? (o no alcanzaría el bit?) 
-- **Respuesta 12**: Si bien la documentación de la librería dice claramente que V toma dos valores (el 0 o el 1), entiendo que teóricamente los valores candidatos podrían ser 4 (según lo que lei hay varios posts donde la gente se pregunta qué onda ese valor V, por ejemplo [este](https://ethereum.stackexchange.com/questions/42455/during-ecdsa-signing-how-do-i-generate-the-recovery-id) o [este otro](https://bitcoin.stackexchange.com/questions/38351/ecdsa-v-r-s-what-is-v/38909#38909)). No me queda claro qué sucede si ese V no alcanza para determinar exactamente cuál es la clave pública, lo que supongo es que es algo con probabilidad tan baja que ya fue. Cambié el nombre de “recovery bit” a “recovery id” porque aunque solo tome los valores 0 o 1, es un byte, no un bit.
+- **Respuesta 12**: Si bien la documentación de la librería dice claramente que V toma dos valores (el 0 o el 1), entiendo que teóricamente los valores candidatos podrían ser 4 (según lo que leí hay varios posts donde la gente se pregunta qué onda ese valor V, por ejemplo [este](https://ethereum.stackexchange.com/questions/42455/during-ecdsa-signing-how-do-i-generate-the-recovery-id) o [este otro](https://bitcoin.stackexchange.com/questions/38351/ecdsa-v-r-s-what-is-v/38909#38909)). No me queda claro qué sucede si ese V no alcanza para determinar exactamente cuál es la clave pública, lo que supongo es que es algo con probabilidad tan baja que ya fue. Cambié el nombre de “recovery bit” a “recovery id” porque aunque solo tome los valores 0 o 1, es un byte, no un bit.
 
 - **Punto 13**: p35, Acá tuve la pregunta de por qué una transacción podría ser descartada, y si un atacante podría causar un DOS contaminando las
 transacciones. Luego al leer que se filtran los elementos válidos entendí que no.
@@ -90,7 +90,7 @@ Como contribuciones originales de este trabajo se presentaron tres alternativas 
 ```
 
 - **Punto 16**: s2.6: No estoy seguro cuánto puede mejorarse sin convertir a esto en un manual, pero me costó seguir la explicación de Tendermint y su API.
-- **Repuesta 16**: Same.
+- **Repuesta 16**: Same. La documentación de Tendermint tampoco era destacable. No apliqué cambios.
 
 # TIPOGRÁFICOS:
 
